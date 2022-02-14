@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.4.0-96-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.11",
+    "heartbeatAt": "2022-02-14T19:24:28.450144",
+    "startedAt": "2022-02-14T19:24:27.247857",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "artifact",
+        "put",
+        "-n",
+        "spotify_mlops/dataset_spotify",
+        "genres_v2.csv"
+    ],
+    "state": "running",
+    "program": "/home/mariana/anaconda3/envs/mlops/bin/wandb",
+    "host": "mariana-X510UAR",
+    "username": "mariana",
+    "executable": "/home/mariana/anaconda3/envs/mlops/bin/python"
+}
