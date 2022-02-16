@@ -37,17 +37,27 @@ def process_args(args):
     
     # create a dataframe from the artifact path
     
-    df = pd.read_csv(artifact_path, sep=',', dtype='unicode')
+    df = pd.read_csv(artifact_path, sep=',', low_memory=False)
     
     #droping columns we dont use
     df.drop(columns=['key', 'uri', 'track_href', 'analysis_url', 'id', 'time_signature',
-                     'song_name', 'Unnamed: 0', 'title', 'type', 'mode'], inplace=True)
+                     'song_name', 'Unnamed: 0', 'title', 'type', 'mode', 'tempo'], inplace=True)
     
-    #removing some genres
+    #removing some genres, kepping only ['Rap', 'Pop', 'Hiphop', 'trance', 'trap']
     df=df[(df.genre!='Dark Trap') & (df.genre!='RnB') &
           (df.genre!='Underground Rap') & (df.genre!='psytrance') &
-          (df.genre!='techhouse')]
+          (df.genre!='techhouse') & (df.genre!='Emo') &
+          (df.genre!='dnb') & (df.genre!='hardstyle') &
+          (df.genre!='Trap Metal') & (df.genre!='techno')]
     
+    #getting a sample
+    df=pd.concat([df[df.genre=='Rap'].sample(n=1000),
+                    df[df.genre=='Pop'].sample(n=461),
+                    df[df.genre=='Hiphop'].sample(n=1000),
+                    df[df.genre=='trance'].sample(n=1000),
+                    df[df.genre=='trap'].sample(n=1000)])
+    
+    print(df.info())
     # Generate a "clean data file"
     filename = "preprocessed_data.csv"
     df.to_csv(filename,index=False)
@@ -103,4 +113,4 @@ if __name__ == "__main__":
     process_args(ARGS)
     
     
-# mlflow run . -P input_artifact=spotify_mlops/spotify_mlops:latest -P artifact_name=data_preprocessed -P artifact_description="This is a Dataset of songs in Spotify preprocessed"
+# mlflow run . -P input_artifact=spotify_mlops/spotify_mlops:latest -P artifact_name=data_preprocessed -P artifact_type=preprocess_data -P artifact_description="This is a Dataset of songs in Spotify preprocessed"
