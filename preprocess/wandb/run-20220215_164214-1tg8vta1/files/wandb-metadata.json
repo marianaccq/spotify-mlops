@@ -1,0 +1,31 @@
+{
+    "os": "Linux-5.4.0-96-generic-x86_64-with-glibc2.27",
+    "python": "3.10.2",
+    "heartbeatAt": "2022-02-15T19:42:15.948528",
+    "startedAt": "2022-02-15T19:42:14.793604",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "spotify_mlops/spotify_mlops:v0",
+        "--artifact_name",
+        "data_preprocessed",
+        "--artifact_type",
+        "preprocess_data",
+        "--artifact_description",
+        "This is a Dataset of songs in Spotify preprocessed"
+    ],
+    "state": "running",
+    "program": "/home/mariana/spotify-mlops/preprocess/run.py",
+    "codePath": "preprocess/run.py",
+    "git": {
+        "remote": "https://github.com/marianaccq/spotify-mlops.git",
+        "commit": "3ef404c39c5b27e4ac11c30e9e1bca63ba5e4f3b"
+    },
+    "email": "mariana.queiroz.110@ufrn.edu.br",
+    "root": "/home/mariana/spotify-mlops",
+    "host": "mariana-X510UAR",
+    "username": "mariana",
+    "executable": "/home/mariana/anaconda3/envs/mlflow-a054d55a40965e07293b22508500504e2500fd05/bin/python"
+}

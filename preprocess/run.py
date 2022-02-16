@@ -35,20 +35,18 @@ def process_args(args):
     artifact = run.use_artifact(args.input_artifact)
     artifact_path = artifact.file()
     
-    # columns used 
-    #columns = ['age', 'workclass', 'fnlwgt', 'education', 'education_num',
-    #           'marital_status', 'occupation', 'relationship', 'race', 
-    #           'sex','capital_gain', 'capital_loss', 'hours_per_week',
-    #           'native_country','high_income']
-    
     # create a dataframe from the artifact path
     
-    df = pd.read_csv(artifact_path,sep=','
-                    header=None)
+    df = pd.read_csv(artifact_path, sep=',', dtype='unicode')
+    
     #droping columns we dont use
     df.drop(columns=['key', 'uri', 'track_href', 'analysis_url', 'id', 'time_signature',
                      'song_name', 'Unnamed: 0', 'title', 'type', 'mode'], inplace=True)
     
+    #removing some genres
+    df=df[(df.genre!='Dark Trap') & (df.genre!='RnB') &
+          (df.genre!='Underground Rap') & (df.genre!='psytrance') &
+          (df.genre!='techhouse')]
     
     # Generate a "clean data file"
     filename = "preprocessed_data.csv"
@@ -103,3 +101,6 @@ if __name__ == "__main__":
 
     # process the arguments
     process_args(ARGS)
+    
+    
+# mlflow run . -P input_artifact=spotify_mlops/spotify_mlops:latest -P artifact_name=data_preprocessed -P artifact_description="This is a Dataset of songs in Spotify preprocessed"
