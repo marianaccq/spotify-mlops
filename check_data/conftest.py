@@ -2,7 +2,7 @@ import pytest
 import pandas as pd
 import wandb
 
-run = wandb.init(project="spotify-mlops-data-check", job_type="data_tests")
+run = wandb.init(job_type="data_tests")
 
 def pytest_addoption(parser):
     parser.addoption("--reference_artifact", action="store")

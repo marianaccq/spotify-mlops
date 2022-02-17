@@ -30,7 +30,7 @@ def process_args(args):
         args.random_state: Integer to use to seed the random number generator
         args.stratify: If provided, it is considered a column name to be used for stratified splitting
     """
-    run = wandb.init(project="spotify-mlops-segregation", job_type="split_data")
+    run = wandb.init(job_type="split_data")
 
     logger.info("Downloading and reading artifact")
     artifact = run.use_artifact(args.input_artifact)

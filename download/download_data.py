@@ -30,7 +30,7 @@ def process_args(args):
     with tempfile.NamedTemporaryFile(mode='wb+') as fp:
 
         logger.info("Creating run")
-        with wandb.init(project='spotify_mlops', job_type="download_data") as run:
+        with wandb.init(job_type="download_data") as run:
             od.download(args.file_url)
             with open("./dataset-of-songs-in-spotify/genres_v2.csv", 'rb') as file:
                 fp.writelines(file)
