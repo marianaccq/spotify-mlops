@@ -1,3 +1,8 @@
+"""
+Creator: Mariana
+Date: Fev. 2022
+Download the raw data
+"""
 import mlflow
 import os
 import hydra

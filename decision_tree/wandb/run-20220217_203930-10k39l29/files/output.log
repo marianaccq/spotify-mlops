@@ -1,0 +1,24 @@
+
+17-02-2022 20:39:33 Downloading and reading train artifact
+17-02-2022 20:39:35 Spliting data into train/val
+17-02-2022 20:39:35 x train: (2185, 8)
+17-02-2022 20:39:35 y train: (2185,)
+17-02-2022 20:39:35 x val: (937, 8)
+17-02-2022 20:39:35 y val: (937,)
+17-02-2022 20:39:35 Removal Outliers
+17-02-2022 20:39:35 x_train shape [original]: (2185, 8)
+17-02-2022 20:39:35 x_train shape [outlier removal]: (2164, 8)
+17-02-2022 20:39:35 Encoding Target Variable
+17-02-2022 20:39:35 Classes [0, 1, 2, 3, 4]: ['Hiphop' 'Pop' 'Rap' 'trance' 'trap']
+17-02-2022 20:39:35 Pipeline generation
+17-02-2022 20:39:35 Training
+17-02-2022 20:39:35 Infering
+17-02-2022 20:39:35 Evaluation metrics
+Traceback (most recent call last):
+  File "run.py", line 332, in <module>
+    process_args(ARGS)
+  File "run.py", line 194, in process_args
+    auc = roc_auc_score(y_val, predict, average="macro")
+  File "/home/mariana/anaconda3/envs/mlflow-521646bdb8ef773b1f4c4ec0a73df68c0c121729/lib/python3.8/site-packages/sklearn/metrics/_ranking.py", line 560, in roc_auc_score
+    raise ValueError("multi_class must be in ('ovo', 'ovr')")
+ValueError: multi_class must be in ('ovo', 'ovr')

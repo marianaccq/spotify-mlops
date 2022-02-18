@@ -1,0 +1,19 @@
+
+17-02-2022 20:53:32 Downloading and reading train artifact
+17-02-2022 20:53:34 Spliting data into train/val
+17-02-2022 20:53:34 x train: (2185, 8)
+17-02-2022 20:53:34 y train: (2185,)
+17-02-2022 20:53:34 x val: (937, 8)
+17-02-2022 20:53:34 y val: (937,)
+17-02-2022 20:53:34 Removal Outliers
+17-02-2022 20:53:34 x_train shape [original]: (2185, 8)
+17-02-2022 20:53:34 x_train shape [outlier removal]: (2162, 8)
+17-02-2022 20:53:34 Encoding Target Variable
+17-02-2022 20:53:34 Classes [0, 1, 2, 3, 4]: ['Hiphop' 'Pop' 'Rap' 'trance' 'trap']
+17-02-2022 20:53:34 Pipeline generation
+17-02-2022 20:53:34 Training
+17-02-2022 20:53:34 Infering
+17-02-2022 20:53:34 Evaluation metrics
+17-02-2022 20:53:37 Uploading figures
+
+[34m[1mwandb[39m[22m: Adding directory to artifact (/tmp/tmpuf1sttpb/model_export)... Done. 0.2s

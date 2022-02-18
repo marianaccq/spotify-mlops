@@ -1,3 +1,8 @@
+"""
+Creator: Mariana
+Date: Fev. 2022
+Download the raw data
+"""
 import pytest
 import pandas as pd
 import wandb

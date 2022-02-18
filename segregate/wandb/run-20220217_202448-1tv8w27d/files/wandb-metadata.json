@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.4.0-96-generic-x86_64-with-glibc2.27",
+    "python": "3.10.2",
+    "heartbeatAt": "2022-02-17T23:24:49.919393",
+    "startedAt": "2022-02-17T23:24:48.813856",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "data_preprocessed.csv:latest",
+        "--artifact_root",
+        "data",
+        "--artifact_type",
+        "segregated_data",
+        "--test_size",
+        "0.3",
+        "--random_state",
+        "42",
+        "--stratify",
+        "genre"
+    ],
+    "state": "running",
+    "program": "/home/mariana/spotify-mlops/segregate/run.py",
+    "codePath": "segregate/run.py",
+    "git": {
+        "remote": "https://github.com/marianaccq/spotify-mlops.git",
+        "commit": "72cf83fa20462d301cd9bc7783d012c573e679b9"
+    },
+    "email": "mariana.queiroz.110@ufrn.edu.br",
+    "root": "/home/mariana/spotify-mlops",
+    "host": "mariana-X510UAR",
+    "username": "mariana",
+    "executable": "/home/mariana/anaconda3/envs/mlflow-75445c30a631c6b83f0505e6743a24083e38a0a5/bin/python"
+}

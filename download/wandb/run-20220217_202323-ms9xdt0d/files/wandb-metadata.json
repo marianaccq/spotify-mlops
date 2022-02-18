@@ -1,0 +1,31 @@
+{
+    "os": "Linux-5.4.0-96-generic-x86_64-with-glibc2.27",
+    "python": "3.10.2",
+    "heartbeatAt": "2022-02-17T23:23:24.747380",
+    "startedAt": "2022-02-17T23:23:23.551920",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--file_url",
+        "https://www.kaggle.com/mrmorj/dataset-of-songs-in-spotify?select=genres_v2.csv",
+        "--artifact_name",
+        "spotify_mlops.csv",
+        "--artifact_type",
+        "raw_data",
+        "--artifact_description",
+        "This is a Dataset of songs in Spotify"
+    ],
+    "state": "running",
+    "program": "/home/mariana/spotify-mlops/download/download_data.py",
+    "codePath": "download/download_data.py",
+    "git": {
+        "remote": "https://github.com/marianaccq/spotify-mlops.git",
+        "commit": "72cf83fa20462d301cd9bc7783d012c573e679b9"
+    },
+    "email": "mariana.queiroz.110@ufrn.edu.br",
+    "root": "/home/mariana/spotify-mlops",
+    "host": "mariana-X510UAR",
+    "username": "mariana",
+    "executable": "/home/mariana/anaconda3/envs/mlflow-8118c03ea5d3622a9010ba95aa9d5a144de06016/bin/python"
+}

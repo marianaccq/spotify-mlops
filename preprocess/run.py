@@ -41,7 +41,7 @@ def process_args(args):
     
     #droping columns we dont use
     df.drop(columns=['key', 'uri', 'track_href', 'analysis_url', 'id', 'time_signature',
-                     'song_name', 'Unnamed: 0', 'title', 'type', 'mode', 'tempo'], inplace=True)
+                     'song_name', 'Unnamed: 0', 'title', 'type', 'mode', 'tempo', 'duration_ms'], inplace=True)
     
     #removing some genres, kepping only ['Rap', 'Pop', 'Hiphop', 'trance', 'trap']
     df=df[(df.genre!='Dark Trap') & (df.genre!='RnB') &

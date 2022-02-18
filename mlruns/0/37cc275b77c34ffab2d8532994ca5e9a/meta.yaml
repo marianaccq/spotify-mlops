@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mariana/spotify-mlops/mlruns/0/37cc275b77c34ffab2d8532994ca5e9a/artifacts
+end_time: 1645140852342
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 37cc275b77c34ffab2d8532994ca5e9a
+run_uuid: 37cc275b77c34ffab2d8532994ca5e9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1645140315523
+status: 4
+tags: []
+user_id: mariana

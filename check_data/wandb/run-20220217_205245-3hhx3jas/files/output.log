@@ -1,0 +1,9 @@
+[1m========================================================= test session starts =========================================================
+platform linux -- Python 3.9.10, pytest-6.2.5, py-1.11.0, pluggy-1.0.0 -- /home/mariana/anaconda3/envs/mlflow-33d7d02cbcccb15d6d2d83802ac3094a9cc7388c/bin/python
+cachedir: .pytest_cache
+rootdir: /home/mariana/spotify-mlops/check_data
+[1mcollected 2 items                                                                                                                     
+test_data.py::test_column_presence_and_type <class 'pandas.core.frame.DataFrame'>
+[32mPASSED
+test_data.py::test_class_names [32mPASSED
+[32m========================================================== [1m2 passed[22m in 2.40s ==========================================================
