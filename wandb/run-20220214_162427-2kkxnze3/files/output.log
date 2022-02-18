@@ -1,2 +1,0 @@
-Artifact uploaded, use this artifact in a run by adding:
-    artifact = run.use_artifact("marianaccq/spotify_mlops/dataset_spotify:latest")

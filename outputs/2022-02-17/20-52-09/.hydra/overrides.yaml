@@ -1,1 +1,0 @@
-- main.execute_steps='download,preprocess,check_data,segregate,decision_tree'
