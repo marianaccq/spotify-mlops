@@ -8,6 +8,6 @@ Com o intuito de colocar o artefato em produção utilizando o MLflow para simpl
 Figura 01: Imagem retirada da aula do professor [@ivanovitchm](https://github.com/ivanovitchm)
 
 
-Publicamos um mini [artigo na plataforma Medium](https://medium.com/@maricamilaa ) explicando o desenvolvimento do projeto. 
+Publicamos um mini [artigo na plataforma Medium](https://medium.com/@maricamilaa/construindo-um-pipeline-de-mlops-com-mlflow-hydra-weights-biases-e-conda-para-um-modelo-de-7ef2238a135f) explicando o desenvolvimento do projeto. 
 
-Projeto realizado por Mariana Queiroz e [Júlia Guardiani](https://github.com/juliaguardiani)
+Projeto realizado por Mariana Queiroz e [Júlia Guardiani](https://github.com/juliaguardiani).
